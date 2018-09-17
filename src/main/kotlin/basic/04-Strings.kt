@@ -14,6 +14,14 @@ fun main(args: Array<String>) {
     """.trimIndent()
     println(str2)
 
+    println()
+    val str3 = """
+        |This is indent trim margin by pipe slash
+        |this too...
+    """.trimMargin()
+    println(str3)
+
+    println()
     // string interpolation
     val number = 12345
     println("number is $number")
