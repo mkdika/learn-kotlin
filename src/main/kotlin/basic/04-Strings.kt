@@ -15,6 +15,8 @@ fun main(args: Array<String>) {
     println(str2)
 
     // string interpolation
+    val number = 12345
+    println("number is $number")
     println("My name is ${str1 + "..."}")
     println("3 x 5 = ${3 * 5}")
 }
