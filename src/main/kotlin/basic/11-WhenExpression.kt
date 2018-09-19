@@ -33,6 +33,10 @@ fun main(args: Array<String>) {
                 else -> false
             }
     println(isFoo)
+
+    println(describe("Maikel"))
+    println(describe(1))
+    println(describe(1_000_000_000L))
 }
 
 /**
@@ -47,3 +51,12 @@ fun whenWithoutArgs(x: Int, y: Int){
         else -> println("X must equal to Y")
     }
 }
+
+fun describe(any: Any): String =
+        when(any) {
+            1           -> "One"
+            "Hello"     -> "Greeting"
+            is Long     -> "Long"
+            !is String  -> "Not a string"
+            else        -> "Unknown"
+        }
