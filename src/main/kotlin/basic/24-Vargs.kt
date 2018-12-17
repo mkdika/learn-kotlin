@@ -1,6 +1,11 @@
 package basic
 
+// varargs as parameter to others vararg :)
 fun printString(vararg strings: String) {
+    realPrintString(*strings) // need to put asterisk * in front of argument name
+}
+
+fun realPrintString(vararg strings: String) {
     for (str in strings) {
         print("$str ")
     }

@@ -10,4 +10,6 @@ enum class Color {
 fun main(args: Array<String>) {
     println("Color Blue is ${Color.BLUE}")
     Color.values().forEach { println(it) }
+
+    println(Color.values().size)
 }

@@ -7,7 +7,7 @@ package basic
 fun main(args: Array<String>) {
 
     // when (value)
-    val x: Int = 3
+    val x: Int =2
 
     when (x) {
         0 -> println("X is zero")

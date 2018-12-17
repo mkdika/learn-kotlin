@@ -12,4 +12,12 @@ fun main(args: Array<String>) {
     // if not null and else shorthand
     println(files?.size ?: "empty")
 
+    var abc: String? = null
+
+    println("abc = ${abc ?: "is null"}")
+
+    abc ="maikel"
+
+    println("abc = ${abc ?: "abc is null"}")
+
 }

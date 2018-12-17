@@ -24,6 +24,7 @@ class InitOrderDemo(name: String) {
     init {
         println("Second initializer block that prints ${name.length}")
     }
+
 }
 
 // class with multi constructor
