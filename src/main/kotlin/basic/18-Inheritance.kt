@@ -37,11 +37,16 @@ interface B {
     fun b() { print("b") }
 }
 
-class C() : A(), B {
+class C : A(), B {
     // The compiler requires f() to be overridden:
     override fun f() {
         super<A>.f() // call to A.f()
         super<B>.f() // call to B.f()
     }
+}
+
+fun main(args: Array<String>) {
+    val c = C()
+    c.f()
 }
 

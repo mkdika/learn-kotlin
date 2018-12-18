@@ -3,7 +3,7 @@ buildscript {
 }
 
 plugins {
-    id 'org.jetbrains.kotlin.jvm' version '1.2.51'
+    id 'org.jetbrains.kotlin.jvm' version '1.2.71'
 }
 
 group 'com.mkdika'
@@ -16,7 +16,6 @@ repositories {
 
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
-    compile project(':kotlinx-coroutines-reactive')
     compile 'io.reactivex.rxjava2:rxjava:2.1.9'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:0.30.1'
 }
