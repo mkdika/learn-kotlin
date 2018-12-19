@@ -38,6 +38,12 @@ fun main(args: Array<String>) {
     println(recognize('g'))
     println(recognize('X'))
     println(recognize('#'))
+
+    val range = 0..10 step 2
+    for (i in range) print("$i ")
+    for (i in range.reversed()) print("$i ")
+    println()
+    for (letter in 'Z' downTo 'A') print(letter)
 }
 
 // range pattern matching with when
