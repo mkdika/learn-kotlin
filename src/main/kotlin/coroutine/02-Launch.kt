@@ -1,9 +1,11 @@
 package coroutine
 
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.experimental.GlobalScope
 import kotlinx.coroutines.experimental.delay
 import kotlinx.coroutines.experimental.launch
 import kotlinx.coroutines.experimental.runBlocking
+import kotlinx.coroutines.runBlocking
 
 fun main(args: Array<String>) {
     GlobalScope.launch { // launch new coroutine in background and continue

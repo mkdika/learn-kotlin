@@ -1,9 +1,13 @@
 package coroutine
 
+import kotlinx.coroutines.channels.consumeEach
+import kotlinx.coroutines.channels.produce
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.experimental.channels.consumeEach
 import kotlinx.coroutines.experimental.channels.produce
 import kotlinx.coroutines.experimental.delay
 import kotlinx.coroutines.experimental.runBlocking
+import kotlinx.coroutines.runBlocking
 
 fun main(args: Array<String>) = runBlocking<Unit> {
     // create a channel that produces numbers from 1 to 3 with 200ms delays between them
